@@ -1,0 +1,18 @@
+[data-comp="NavBar"] {
+	--max-width: 80rem;
+	display: flex;
+	background-color: #222;
+	padding: 1rem calc(max((100vw - var(--max-width)) / 2, 4rem));
+	gap: 2rem;
+
+	> * {
+		padding: 2px 8px;
+		border-radius: 2px;
+		transition: all .3s;
+		
+		&.active {
+			color: var(--clrSecondary);
+			background-color: rgba(255, 255, 255, 0.1);
+		}
+	}
+}
