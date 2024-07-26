@@ -11,6 +11,12 @@
 		display: flex;
 		flex-direction: column;
 
+		[data-comp="Root"] {
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+		}
+
 		main {
 			flex: 1;
 		}
